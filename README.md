@@ -1,2 +1,2 @@
-# simple-php
-Some simple small PHP scripts
+# simple-snippets
+Some simple small snippets
