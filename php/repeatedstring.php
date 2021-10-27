@@ -1,12 +1,9 @@
 <?php
 /**
- *  return an integer representing the number of occurrences of a in the prefix of length n in the infinitely repeating string.
- *
- * @param $s
- * @param $n
- * @return float|int
+ * Return an integer representing the number of occurrences of a in the prefix of length n in the infinitely repeating string.
  */
-function repeatedString($s, $n) {
+function repeatedString(string $s, int $n): int
+{
     $ar = str_split($s);
     $fullTimes = floor($n / count($ar));
 

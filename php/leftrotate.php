@@ -7,7 +7,8 @@
  *  2. INTEGER_ARRAY arr
  */
 
-function rotateLeft($d, $arr) {
+function rotateLeft(int $d, array $arr): array
+{
     for ($i = 0; $i < $d; $i++) {
         $val = $arr[$i];
         unset($arr[$i]);

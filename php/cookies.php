@@ -4,9 +4,8 @@
  *
  * @param $k int Minimum required sweetness
  * @param $cookies array The array of cookies
- * @return int
  */
-function cookies($k, $cookies)
+function cookies(int $k, array $cookies): int
 {
     $heap = new SplMinHeap();
 
