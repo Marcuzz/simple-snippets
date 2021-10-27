@@ -2,16 +2,14 @@
 
 /**
  * Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers
- *
- * @param $ar
  */
-function miniMaxSum($ar)
+function miniMaxSum(array $arr): void
 {
     $min = PHP_INT_MAX;
     $max = PHP_INT_MIN;
 
-    for ($i = 0; $i < count($ar); $i++) {
-        $value = array_sum(array_diff($ar, [$ar[$i]]));
+    foreach ($arr as $value) {
+        $value = array_sum(array_diff($arr, [$value]));
 
         if ($value > $max) {
             $max = $value;
